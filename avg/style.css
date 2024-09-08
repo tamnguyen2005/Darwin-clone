@@ -1,0 +1,230 @@
+html {
+  font-size: 62.5%;
+}
+:root {
+  --primary-color: rgb(255, 166, 0);
+  --primary-font: "Sen", sans-serif;
+}
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+/* Code phan header */
+/* Code chung */
+.header .body-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 0;
+  z-index: 1;
+}
+.header {
+  background-color: #fff;
+}
+.main-content {
+  width: 117rem;
+  margin: 0 auto;
+  max-width: calc(100% - 40px);
+}
+.header.fixed {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+/* Code riêng */
+.nav .ul1 {
+  display: flex;
+}
+/* chinh size cho logo */
+.body-header .logo {
+  height: 5rem;
+  cursor: pointer;
+}
+.body-header .search .kinh-lup {
+  height: 2rem;
+}
+.body-header .infor .logoin {
+  height: 3rem;
+  cursor: pointer;
+}
+.body-header .infor .cart {
+  height: 3rem;
+}
+/* chinh padding cho navbar */
+.nav a {
+  padding: 2rem;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+.nav li.active a,.nav a:hover {
+  color: var(--primary-color);
+}
+.nav li.active a::before {
+  content: "";
+  width: 5rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 2rem;
+  top: 4.7rem;
+  display: block;
+  background-color: black;
+}
+/* chinh thanh search */
+.body-header .search .tim {
+  padding: 1rem;
+  border: none;
+}
+.body-header .search .kinh-lup {
+  font-size: 2rem;
+  display: inline;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  margin-left: 1.9rem;
+}
+.body-header .search {
+  position: relative;
+}
+.body-header .search::before {
+  content: "";
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
+  display: inline-block;
+  width: 25rem;
+  height: 0.1rem;
+  background-color: black;
+}
+/* Chinh phan dang nhap */
+.body-header .infor .cart {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+/* style cho khoi product */
+.product {
+  position: absolute;
+  padding-top: 1rem;
+  left: 0;
+  top: 7.5rem;
+  /* display: none; */
+  visibility: hidden;
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+}
+.product .sp a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  line-height: 2rem;
+  color: black;
+}
+.product .sp a:hover {
+  color: var(--primary-color);
+}
+.product .sp a:hover {
+  color: var(--primary-color);
+}
+.product .sp {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.main-content .product .logo2 {
+  width: 50%;
+}
+li.product {
+  position: relative;
+}
+li.products:hover .product {
+  visibility: visible;
+}
+/* Code phan main */
+/* code chung */
+.body-main .hero-pic img {
+  width: 117rem;
+  height: 50rem;
+}
+
+/* code phan san pham */
+/* code chung */
+
+/* code rieng */
+.sanpham {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 3.6rem 0;
+}
+.sanpham .trung-bay {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.sanpham .product-ava {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.trung-bay .tb {
+  width: 30%;
+}
+.tb img {
+  width: 100%;
+}
+.tb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tb .content .desc {
+  font-family: "Sen", sans-serif;
+  margin: 1rem auto;
+  color: white;
+}
+.tb .content .giam-gia {
+  text-decoration: line-through;
+  color: white;
+}
+.tb .content .gia {
+  margin-top: 1rem;
+  color: var(--primary-color);
+}
+.sanpham .nut {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  padding: 3rem;
+}
+.sanpham .btn {
+  border: 1px solid white;
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.sanpham .btn a {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+  padding: 1rem;
+}
+.sanpham .btn .fa-arrow-right-long {
+  color: white;
+  position: absolute;
+  top: 1.1rem;
+  right: 6rem;
+  display: none;
+}
+.sanpham .btn:hover .fa-arrow-right-long {
+  display: inline;
+}
