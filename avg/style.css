@@ -59,7 +59,8 @@ body {
   color: black;
   position: relative;
 }
-.nav li.active a,.nav a:hover {
+.nav li.active a,
+.nav a:hover {
   color: var(--primary-color);
 }
 .nav li.active a::before {
@@ -227,4 +228,199 @@ li.products:hover .product {
 }
 .sanpham .btn:hover .fa-arrow-right-long {
   display: inline;
+}
+/* code phan feedback */
+/* code chung */
+.feedback {
+  padding: 2rem 0;
+  margin-top: 1rem;
+  text-align: center;
+}
+.feedback .title {
+  padding: 4rem;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+.title .title-text {
+  position: relative;
+}
+.feedback .title-text::after {
+  position: absolute;
+  top: 3.5rem;
+  left: 2.9rem;
+  content: "";
+  display: inline-block;
+  width: 9rem;
+  height: 0.4rem;
+  background-color: var(--primary-color);
+}
+.feedback .feedback-img {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.feedback .feedback-img {
+  margin-top: 1rem;
+}
+.feedback-img .fbi {
+  width: 20%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.feedback .circles {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.feedback .circles .circle {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color:gray;
+  border-radius: 50%;
+}
+.circles .circle.atv{
+  background-color:var(--primary-color);
+}
+.feedback .circles .direction{
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+/* code phan entertain */
+/* entertain tren*/
+.entertain .entertain-dau
+{
+  display: flex;
+  padding: 2rem;
+  margin-top: 2rem;
+
+}
+.entertain .entertain-dau .nd1{
+  font-size: 2.5rem;
+}
+.entertain .entertain-dau .nd2
+{
+  font-family: "Sen" sans-serif;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+.entertain .entertain-dau .dauphai
+{
+  margin-left: auto;
+  display: flex;
+  justify-content: end;
+  width: 70%;
+}
+.entertain .entertain-dau .dautrai
+{
+  width: 40%;
+}
+.entertain-dau .dauphai span
+{
+  font-family: "Sen" sans-serif;
+  font-size: 1rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.entertain-dau .dauphai .dauchiphai
+{
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+
+/* entertain duoi */
+.entertain .entertain-chan
+{
+  margin-top: 2rem;
+  /* display: flex; */
+  gap: 1rem;
+}
+.entertain-chan .qc-tren{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.entertain-chan .qc-duoi{
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.entertain-chan .qc{
+  flex-wrap: wrap;
+}
+
+.entertain .entertain-chan .qc
+{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.entertain-chan .qc .anhqc{
+  width: 100%;
+  object-fit: cover;
+  height: 25.5rem;
+}
+.entertain-chan .qc .qc-text
+{
+  margin-top: 2rem;
+  font-family: var(--primary-font);
+}
+
+/* code phan flexing */
+.flexing{
+  padding: 3rem 0;
+  margin-top: 3rem;
+  margin-left: 8.9rem;
+}
+.flexing .nut-flexing
+{
+display: flex;
+margin-bottom: 3rem;
+gap: 2rem;
+}
+.nut-flexing .nut-fl
+{
+  font-family: var(--primary-font);
+  padding: 1rem;
+  box-shadow: 5px 4px 1px black;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+/* code phan text flexing */
+.text-flexing1{
+  color: var(--primary-color);
+  padding: 1rem 0;
+  position: relative;
+}
+.text-flexing1::after{
+content: "";
+position: absolute;
+top:3.9rem;
+display: block;
+width: 8rem;
+height: 0.3rem;
+background-color:var(--primary-color);
+}
+.mota-flexing{
+  margin-top: 3.9rem;
+  line-height: 2rem;
+
+}
+.mota-flexing .text-flexing strong{
+  font-style: bold;
+  font-weight: 700;
+}
+.mota-flexing .text-flexing span{
+  color: blue;
+  cursor: pointer;
 }
